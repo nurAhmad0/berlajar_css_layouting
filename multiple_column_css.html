@@ -1,0 +1,33 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/column-rule
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/column-gap -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            column-width: 200px;
+            /*artinya aku mau setiap kolomnya memiiki lebar 200px 
+            jadi kalau lebar dari browsernya kelipatan dari 200px maka akan membuat kolom baru*/
+            /* column-count:3; */
+            /*artinya tiak peduli lebarnya berpaa yang penting kolomnya itu ada 3*/
+            column-gap: 30px;
+            column-rule: 2px dotted blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Judul artikel</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint reprehenderit, voluptas, totam hic illo voluptates fugit in tenetur optio alias accusantium, perferendis impedit facilis quo asperiores deserunt atque voluptatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ea laboriosam incidunt. Illo pariatur, quas dolores fugit rerum labore autem nihil at expedita tenetur, natus eum id temporibus cumque? Facilis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto aperiam quibusdam ex beatae possimus dolore, cum mollitia, recusandae aliquid ullam natus neque tenetur dolores doloribus architecto vitae! Error, nemo.</p>
+    </div>
+</body>
+</html>

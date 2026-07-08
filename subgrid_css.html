@@ -1,0 +1,100 @@
+<!-- digunakan dalam kondisi jika ada seperti didalam grid item 
+ternyata ada grid container dan ma membuat aturan nya atau baris dan kolomnya
+mengikuti seprti grid
+diatasnya jadi lebih baik digunakan untuk subgrid -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+        }
+        .content1{
+            background-color: bisque;
+            grid-column: 2/5; /*jadi dari line 2 smapai line 5*/
+            grid-row: 2/5; /*jadi dari line 2 smapai line 5*/
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;/*ini harus mengikuuti parentnya jadi kalau di parentnya 
+            itu 100px 100px 50px 100px 100px jadi di sini juga harus 100px 50px 100px
+            jadi harus manual dan ini itu contoh bukan sub grid*/
+        }
+        .inner{
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content1">
+            <div class="inner">1</div>
+            <div class="inner">2</div>
+            <div class="inner">3</div>
+            <div class="inner">4</div>
+            <div class="inner">5</div>
+            <div class="inner">6</div>
+            <div class="inner">7</div>
+            <div class="inner">8</div>
+            <div class="inner">9</div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px;
+        }
+        .content1{
+            background-color: bisque;
+            grid-column: 2/5; /*jadi dari line 2 smapai line 5*/
+            grid-row: 2/5; /*jadi dari line 2 smapai line 5*/
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-template-rows: subgrid;
+        }
+        .inner{
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content1">
+            <div class="inner">1</div>
+            <div class="inner">2</div>
+            <div class="inner">3</div>
+            <div class="inner">4</div>
+            <div class="inner">5</div>
+            <div class="inner">6</div>
+            <div class="inner">7</div>
+            <div class="inner">8</div>
+            <div class="inner">9</div>
+        </div>
+    </div>
+</body>
+</html>
