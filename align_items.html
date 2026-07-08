@@ -1,0 +1,64 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items
+digunakan untuk perataan secara cross axis 
+flex-start(untuk menempel diatas karena cross)
+flex-end(untuk menempel dibawah karean cros)
+center(ditenah)
+strech(ditarik dari atas full sampai bawah)
+baseline(mengikuti teks atau content yang ada didalamnya)
+
+ini itu membagi semuanya berdsaeakn banyak baris lalu ditaruh setip individu
+di baris yang sudah di bagi 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen Align Items</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: antiquewhite;
+            padding: 20px;
+            height: 250px;
+            margin-bottom: 300px; /* Biar ada jarak ke bawah */
+
+            /* 🌟 TOMBOL UTAMA EKSPERIMENMU 🌟 */
+            /* Ganti-ganti nilai di bawah ini untuk melihat efeknya: */
+            align-items: center; 
+        }
+
+        .content {
+            background-color: aqua;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+        }
+
+        /* Kita bedakan ukuran tulisan di setiap kotak */
+        .kotak-kecil { font-size: 16px; }
+        .kotak-sedang { font-size: 32px; font-weight: bold; }
+        .kotak-besar { font-size: 55px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Uji Coba properti `align-items`</h2>
+    <p>Sekarang posisi aktif: <strong>baseline</strong>. Silakan ganti kodenya di bagian CSS!</p>
+
+    <div class="container">
+        <div class="content kotak-kecil">
+            <span>Kecil</span>
+        </div>
+        <div class="content kotak-sedang">
+            <span>Sedang</span>
+        </div>
+        <div class="content kotak-besar">
+            <span>Besar</span>
+        </div>
+    </div>
+
+</body>
+</html>

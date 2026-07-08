@@ -1,0 +1,50 @@
+<!-- digunakan untuk mengambil ruang sebesar yang ditentukan 
+kalau tidak ada maka diambil semampunya
+tapi kalau ada maka diambil sesuai flex basis
+
+jika flex-shrink:0; maka flex ittem akan mengambil sejumlah flex-basis 
+walaupun layar tidak cukup 
+jadi flex-basis itu minimal jadi kalau melebihi itu aman-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .content{
+            background-color: aqua;
+            border: 1px solid blue;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+        .content1{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        .content3{
+            flex-basis: 300px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content1 content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam consequatur eligendi consectetur hic assumenda? Quibusdam odio velit necessitatibus! Veniam nam dolorem vitae libero vero reprehenderit molestiae enim unde nihil! Voluptas?</div>
+    
+        <div class="content2 content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam consequatur eligendi consectetur hic assumenda? Quibusdam odio velit necessitatibus! Veniam nam dolorem vitae libero vero reprehenderit molestiae enim unde nihil! Voluptas?</div>
+    
+        <div class="content3 content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam consequatur eligendi consectetur hic assumenda? Quibusdam odio velit necessitatibus! Veniam nam dolorem vitae libero vero reprehenderit molestiae enim unde nihil! Voluptas?</div>
+    
+    </div>
+</body>
+</html>
+
+<!-- shrink itu untuk menyusutkan konten -->

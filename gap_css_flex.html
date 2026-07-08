@@ -1,0 +1,60 @@
+<!-- bisanya kita menggunakna margin untuk mengatri jarak antar flex item 
+tapi kalau untuk flex item itu mengguunakan gap untuk menentukan jarak untuk 
+row dan column 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/gap
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: yellow;
+            flex-wrap: wrap;
+            /*gap:10px 10px*/
+            row-gap: 10px;
+            column-gap: 10px;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 1000px;
+        }
+
+        .content{
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 10px;
+            width: 200px;
+            margin: 10px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Content 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quos fugit minima, cum quae repellat molestias obcaecati nisi, laudantium aliquam optio dolor sint neque consectetur sit ipsum eligendi. Error!</p>
+        </div>
+        <div class="content">
+            <h1>Content 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quos fugit minima, cum quae repellat molestias obcaecati nisi, laudantium aliquam optio dolor sint neque consectetur sit ipsum eligendi. Error!</p>
+        </div>
+        <div class="content">
+            <h1>Content 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quos fugit minima, cum quae repellat molestias obcaecati nisi, laudantium aliquam optio dolor sint neque consectetur sit ipsum eligendi. Error!</p>
+        </div>
+        <div class="content">
+            <h1>Content 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quos fugit minima, cum quae repellat molestias obcaecati nisi, laudantium aliquam optio dolor sint neque consectetur sit ipsum eligendi. Error!</p>
+        </div>
+        <div class="content">
+            <h1>Content 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quos fugit minima, cum quae repellat molestias obcaecati nisi, laudantium aliquam optio dolor sint neque consectetur sit ipsum eligendi. Error!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/justify-content
+justify-content:flex-start(untuk dadri kiri)/flex-end(untuk dari kanan)
+/center(tengah)/space-between(pojok kanan dan kiri dan juga tengah)
+/space-around/space-evenly -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 500px;
+            background-color: yellow;
+            justify-content: space-between;
+
+        }
+        .content{
+            background-color: aqua;
+            border:2px solid blue;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Content 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugiat ipsum illo quidem, est magni odio pariatur, ratione voluptatum voluptatibus ab esse ex omnis libero ipsam nihil minima earum perspiciatis!</p>
+        </div>
+        <div class="content">
+            <h1>Content 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugiat ipsum illo quidem, est magni odio pariatur, ratione voluptatum voluptatibus ab esse ex omnis libero ipsam nihil minima earum perspiciatis!</p>
+        </div>
+        <div class="content">
+            <h1>Content 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugiat ipsum illo quidem, est magni odio pariatur, ratione voluptatum voluptatibus ab esse ex omnis libero ipsam nihil minima earum perspiciatis!</p>
+        </div>
+    </div>
+</body>
+</html>

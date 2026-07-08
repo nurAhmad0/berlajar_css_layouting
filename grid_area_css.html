@@ -1,0 +1,55 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-areas
+
+ini digunakan untuk menentukan area 
+kalau "." titik itu kosong atau tidak diguanakan
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas: 
+                "header header header"
+                ". content ."
+                "footer footer footer";
+        }
+        .header{
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        .footer{
+            background-color: aqua;
+            grid-area: footer;
+        }
+        .content{
+            background-color:  bisque;
+            grid-area: content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>selamat datang di dalam weeb ini</p>
+        </div>
+
+        <div class="content">
+            <h1>belajar css</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit suscipit, vitae in necessitatibus natus ad et. Minima magni ipsa quo voluptate, facilis sed numquam tenetur iste, tempora labore ducimus dolor?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor commodi reiciendis velit illo non optio, provident id beatae hic necessitatibus, excepturi cumque cupiditate voluptatibus assumenda, unde neque dolore nostrum?</p>
+        </div>
+
+        <div class="footer">
+            <p>makasi telah mambaca</p>
+        </div>
+    </div>
+</body>
+</html>

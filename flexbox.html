@@ -1,0 +1,91 @@
+<!-- cross axis digunakan untuk tinggi dari flex
+main axis digunakan untuk lebar dari flex
+cros size digunakan untuk tinggi dari item didalam flex
+main size digunakan utuk lebar dair ite didalam flex
+secara default flex itu dari kiri ke kanan tapi bisa diubah dengan 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-direction
+flex-direction:row(baris dari kiri ke kanan)/row-reverse(sama cuma di balik saja)/
+column(dari atas ke bawah tapi cuma satu colomn saja)/column-revers
+
+flex-wrap itu digunakan untuk ketika item yang dibutuhkan itu memerlukan 
+baris lain vertikal maupun horizontal
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap
+flex-wrap: warp(membuat baris baru)/nowarp(tembus ke kanan)/wrap-reverse(cuma di riverse saja)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;/*jadi ini itu memaksa semau item flex harus mengikuti lebar dari yang sudha ditentukan
+            jaid kalau ada hisana sepeti border atau yang lain itu akan memakan ruang yang ada di dalam flex item*/
+        }
+        .container{
+            display: flex;
+            background-color: antiquewhite;
+            flex-direction: row;/*kalau row emang ke bawah seperti column kareean div itu block atau mengambil dari kiri ke kanan full dan dibwahw itu aku tidak edit lebarnya*/
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .content{
+            background-color: aqua;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px; 
+            width: calc(50% - 44px);
+            /*width: calc(50% - 20px); itu itu kana berhubungan dengan *{}diatas
+            jadi 20 itu margin dari kedua kotak*/
+        }
+        /* Mengincar kotak .content yang berada di urutan ke-1 */
+        .content:nth-child(1) {
+            order: 1;
+        }
+
+        /* Mengincar kotak .content yang berada di urutan ke-2 */
+        .content:nth-child(2) {
+            order: 2;
+        }
+
+        /* Dan seterusnya untuk kotak 3 sampai 6... */
+        .content:nth-child(3) { order: 3; }
+        .content:nth-child(4) { order: 4; }
+        .content:nth-child(5) { order: 5; }
+        .content:nth-child(6) { order: 6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>ini konten 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+        <div class="content">
+            <h1>ini konten 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+        <div class="content">
+            <h1>ini konten 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+        <div class="content">
+            <h1>ini konten 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+        <div class="content">
+            <h1>ini konten 5</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+        <div class="content">
+            <h1>ini konten 6</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus labore rerum molestiae esse amet commodi totam earum tempore cumque possimus. Ducimus amet asperiores repudiandae cumque similique laboriosam explicabo, excepturi odio.</p>
+        </div>
+       
+    </div>
+    <!-- semua element yang berhubungan langsng dengan flex itu disebut item -->
+</body>
+</html>

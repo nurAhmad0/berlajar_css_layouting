@@ -1,0 +1,49 @@
+<!-- display itu ada yang block dan inline
+jadi bisa menguubha dari block menjadi inline ataupun sebaliknya
+inline hanya mengambil tempat secukupnya saja
+block ditampilkan secara block atau dari kiri ke kanan pojok pojok
+inline-block jadi komponen bisa ditampilkan secara inline 
+tapi bisa diubah tinggi dan lebar komponen layaknya block
+none artinya komponen akan dihapus dan tidak ditampilkan -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            vertical-align: top;
+            display: inline-block;
+            background-color: aqua;
+            width: 200px;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+            border: solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>ini konten satu</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sed accusamus quae temporibus veniam enim nihil deserunt excepturi? Voluptatum sunt tempore dignissimos consequatur quo ducimus enim sint quae temporibus recusandae.</p>
+
+    </div>
+    
+    <div class="content">
+        <h1>ini konten dua</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sed accusamus quae temporibus veniam enim nihil deserunt excepturi? Voluptatum sunt tempore dignissimos consequatur quo ducimus enim sint quae temporibus recusandae.</p>
+
+    </div>
+    <div class="content">
+        <h1>ini konten dua</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sed accusamus quae temporibus veniam enim nihil deserunt excepturi? Voluptatum sunt tempore dignissimos consequatur quo ducimus enim sint quae temporibus recusandae.</p>
+
+    </div>
+</body>
+</html>

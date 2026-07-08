@@ -1,0 +1,120 @@
+=======================ini itu grid ========================================== -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen Garis Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* Kita buat cetakan: 3 Kolom sama rata */
+            grid-template-columns: repeat(3, 1fr); 
+            grid-gap: 15px;
+            background-color: yellow;
+            padding: 20px;
+            height: 400px;
+        }
+
+        .box {
+            background-color: aqua;
+            border: 2px solid blue;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        /* 🌟 KOTAK BARIS PERTAMA: Memakai Kolom 2 dan 3 */
+        .kotak-atas {
+            background-color: lightgreen;
+            /* Dimulai dari garis nomor 2, berakhir di garis paling akhir (-1 atau 4) */
+            grid-column-start: 2;
+            grid-column-end: -1; 
+        }
+
+        /* 🌟 KOTAK BARIS KEDUA: Memakai Kolom 1 dan 2 */
+        .kotak-bawah {
+            background-color: lightcoral;
+            /* Dimulai dari garis nomor 1, membentang melewati 2 kolom */
+            grid-column-start: 1;
+            grid-column-end: span 2; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Eksperimen Manipulasi Garis Grid</h2>
+    <div class="container">
+        <div class="box kotak-atas">Kotak Atas (Kolom 2 & 3)</div>
+        <div class="box kotak-bawah">Kotak Bawah (Kolom 1 & 2)</div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+<!-- ===============ini itu experimen============= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen Gabung Baris Kolom</title>
+    <style>
+        .container {
+            display: grid;
+            /* Cetakan: 3 Kolom dan 3 Baris sama rata */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 120px); 
+            grid-gap: 15px;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: aqua;
+            border: 2px solid blue;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* 🌟 KOTAK RAKSASA (Kiri Atas) */
+        .kotak-raksasa {
+            background-color: lightgreen;
+            /* Menggabungkan Kolom 1 & 2 */
+            grid-column: 1 / span 2; 
+            /* Menggabungkan Baris 1 & 2 */
+            grid-row: 1 / span 2;    
+        }
+
+        /* 🌟 KOTAK TEGAK (Kanan Bawah) */
+        .kotak-tegak {
+            background-color: lightcoral;
+            /* Tetap di kolom 3 */
+            grid-column: 3;          
+            /* Menggabungkan Baris 2 & 3 */
+            grid-row: 2 / span 2;    
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Eksperimen Gabung Kolom & Baris Sekaligus</h2>
+    <div class="container">
+        <div class="box kotak-raksasa">Kotak 1 (Kolom 1-2 & Baris 1-2)</div>
+        <div class="box">Sisa Baris 1 Kolom 3</div>
+        <div class="box kotak-tegak">Kotak 2 (Kolom 3 & Baris 2-3)</div>
+        
+        <div class="box">Sisa Baris 3 Kolom 1</div>
+        <div class="box">Sisa Baris 3 Kolom 2</div>
+    </div>
+
+</body>
+</html>

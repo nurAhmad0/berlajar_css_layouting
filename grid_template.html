@@ -1,0 +1,60 @@
+<!-- grid template
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-rows
+grid-column-start: auto;(biasa)
+grid-column-start: 2;(maka dimulai dari cell kedua untuk cell pertama lewat)
+grid-column-start: -1; (smapai gari spaling kanan)
+grid-column-start: span 2;(mengambil 2 cell dari yang pertama )
+
+
+grid line name
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+
+        }
+        .content{
+            background-color: aqua;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>content 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum eum eius dolor eveniet, veniam magni incidunt magnam quos repudiandae laudantium libero tempore maxime laborum nulla doloribus! Quo, voluptates assumenda?</p>
+        </div>
+        <div class="content">
+            <h1>content 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum eum eius dolor eveniet, veniam magni incidunt magnam quos repudiandae laudantium libero tempore maxime laborum nulla doloribus! Quo, voluptates assumenda?</p>
+        </div>
+        <div class="content">
+            <h1>content 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum eum eius dolor eveniet, veniam magni incidunt magnam quos repudiandae laudantium libero tempore maxime laborum nulla doloribus! Quo, voluptates assumenda?</p>
+        </div>
+        <div class="content">
+            <h1>content 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum eum eius dolor eveniet, veniam magni incidunt magnam quos repudiandae laudantium libero tempore maxime laborum nulla doloribus! Quo, voluptates assumenda?</p>
+        </div>
+        <div class="content">
+            <h1>content 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque illum eum eius dolor eveniet, veniam magni incidunt magnam quos repudiandae laudantium libero tempore maxime laborum nulla doloribus! Quo, voluptates assumenda?</p>
+        </div>
+    </div>
+</body>
+</html>
