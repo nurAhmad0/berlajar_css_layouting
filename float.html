@@ -1,0 +1,41 @@
+<!-- float sekarng di gunakan utnuk teks yang dikiri atau kanan gambar lalu 
+sampai mengalir ke bawah
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/float
+none/inline-start(gambar dikiri teks menempel di kanan gambar)/
+inline-end(gambar di kanan teks menempel di kiri ) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .continer{
+            background-color: aqua;
+
+        }
+
+        .image{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+            float: inline-start;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>judul berita</h1>
+        <div class="image">A</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur expedita, atque quae fugiat rerum. Iste neque qui esse cumque ad. Repudiandae provident nemo doloribus perspiciatis nostrum molestias reiciendis officia.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sequi placeat similique. Necessitatibus dolor dolore nisi totam debitis doloribus, sunt quam dicta molestiae dolores voluptatibus rerum qui aspernatur iste et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aperiam delectus unde, sequi neque reprehenderit praesentium quibusdam exercitationem ad expedita maxime ullam! In numquam, dignissimos omnis vero sapiente tempore veritatis.</p>
+    </div>
+</body>
+</html>

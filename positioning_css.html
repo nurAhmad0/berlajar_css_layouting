@@ -1,0 +1,79 @@
+<!-- digunakan untuk menempatkan element di temapt yang tidak
+sesuai dengan normal flow 
+contohnya seperti meletakkan element diatas element lain,
+menepatkan elemnt selalu di viewport(bagina yang dapat dilihat oleh layar) 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position
+
+defaultnya itu static jadi seperti normal flow
+
+static
+relative(sama seperti normal flow jadi seperti tetap dikasih tempat 
+seperti normal flow tapi bisa diletakan dimana saja)
+absolute(tidak dikasih tempat seperti normal flow dan 
+bisa diubah terserah untuk lokasinya)
+fixed(diam meskipun layar bergerak)
+sticky(gabungan relativ dan fixed)
+
+
+z index secara default itu berniali 0 atau auto semakin tinggi nilainya semkain diatas
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .content3{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blueviolet;
+        }
+
+        .content2{
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 100px);
+            z-index: 7;
+        }
+
+        .content1{
+            position: sticky;
+            top: 20px;
+            background-color: aquamarine;
+        }
+        .stiky{
+            position: sticky;
+            background-color: brown;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content content1">
+        <h1>Content 1</h1>
+    </div>
+    <div class="content content2">
+        <h1>Content 2</h1>
+    </div>
+    <div class="content content3">
+        <h1>Content 3</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa facere, blanditiis fugiat excepturi animi mollitia ex quas earum, minima, provident a qui aliquid dolorem dolor eos officia nemo magnam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quibusdam ratione dolorum atque modi placeat laudantium ipsa autem dolor sapiente eveniet aperiam quae esse, provident eos beatae harum libero! Debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quibusdam ratione dolorum atque modi placeat laudantium ipsa autem dolor sapiente eveniet aperiam quae esse, provident eos beatae harum libero! Debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa facere, blanditiis fugiat excepturi animi mollitia ex quas earum, minima, provident a qui aliquid dolorem dolor eos officia nemo magnam.</p>
+    <p class="stiky">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque commodi necessitatibus quo blanditiis nobis voluptatum culpa saepe eligendi corrupti sequi at deserunt, id praesentium ratione, modi exercitationem beatae ullam provident!</p>
+</body>
+</html>
