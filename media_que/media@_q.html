@@ -1,0 +1,50 @@
+<!-- @media MediaType Operator MediaFeature Operator MediaFeature ->rumus
+
+mediatype itu ada
+screen:(Artinya aturan ini berlaku untuk semua 
+layar digital (HP, Laptop, Tablet, Monitor PC))/
+
+print: Artinya aturan ini hanya berlaku saat halaman web tersebut hendak 
+dicetak ke kertas menggunakan printer (misal menyembunyikan tombol navigasi 
+saat cetak nota/invoice).
+
+all: Berlaku untuk semua jenis perangkat tanpa kecuali.
+
+operator itu ada and dan ,(or) dan not
+
+MediaFeature itu ada
+min-width: Lebar minimal layar.
+
+max-width: Lebar maksimal layar.
+
+prefers-color-scheme: Mendeteksi apakah HP pengguna sedang memakai
+Dark Mode (Mode Gelap) atau Light Mode.
+
+prefers-reduced-motion: Mendeteksi jika pengguna menyalakan fitur "Kurangi Animasi" di HP-nya 
+(biasanya untuk menghemat baterai atau karena alasan medis/pusing). Jika fitur ini aktif, 
+kamu bisa mematikan efek animasi transisi di websitemu agar tidak bergerak berlebihan.
+
+orientation: Apakah layarnya sedang posisi tegak (portrait di HP) atau tidur 
+(landscape di tablet/PC). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="query-media.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+        <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, non quas? Incidunt, dolores maiores fugiat expedita veritatis sapiente explicabo eum minus, voluptatem est unde sed dolorum nesciunt nobis sunt autem.</div>
+    </div>
+</body>
+</html>
+

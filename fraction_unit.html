@@ -1,0 +1,44 @@
+<!-- biasanya dalam membuat layout itu menggunakan satuan fraction(fr)
+fraction adalah sisa ruang dalam grid. sisa ruang biasanya adalah
+sisa ruang yang bisa diisi seteleh dikurangi oleh grid item yang tidak fleksibel
+misal jika satu ruang itu sisalnya 1000px dan total fr itu 20fr maka
+1 fr itu bernilai 50px
+kalau fr itu membagi panajng layarnya baru akan di dimasukkan itemnya
+jadi fr itu tidak memasukkan panjang itemay sebgaia perhitungan
+
+kalau flex-grow itu masih masuukan panjang dari itemnay sebagai perhitungan
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px repeat(4, 1fr);
+            column-gap: 10px;
+        }
+        .sidebar{
+            background-color: pink;
+        }
+        .content{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Sidebar</h1>
+        </div>
+        <div class="content">Content</div>
+        <div class="content">Content</div>
+        <div class="content">Content</div>
+        <div class="content">Content</div>
+    </div>
+</body>
+</html>

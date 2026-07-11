@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.content{
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 10px) and (max-width:500px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content{
+        background-color: blueviolet;
+    }
+}
+@media screen and (min-width: 500px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .content{
+        background-color: cadetblue;
+    }
+}
+
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */

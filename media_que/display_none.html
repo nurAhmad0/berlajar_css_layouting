@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu_bar{
+            display: inline-block;
+        }
+        .menu{
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .menulis{
+            display: none;
+            background-color: aqua;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .menulis a{
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .menulis a:hover{
+            background-color: bisque;
+        }
+        .menu_bar:hover .menu{
+            background-color: bisque;
+        }
+        .menu_bar:hover .menulis{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu_bar">
+        <button class="menu">Social Media</button>
+        <div class="menulis">
+            <a href="#">facebook</a>
+            <a href="#">youtube</a>
+            <a href="#">tiktok</a>
+            <a href="#">instagram</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime corrupti inventore velit quasi illum sint, odit incidunt! Porro dolores totam blanditiis rem, velit voluptate vel molestias commodi reprehenderit quia consectetur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laboriosam cumque odit eveniet eligendi. Sunt officia voluptatibus nobis corporis ratione possimus quos eos nihil modi. Voluptatibus minus illo suscipit impedit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aperiam, voluptates quam tempore recusandae voluptatem cum minima illo laudantium, eius laborum? Exercitationem numquam alias quisquam illum earum molestias nihil quos!</p>
+</body>
+</html>
